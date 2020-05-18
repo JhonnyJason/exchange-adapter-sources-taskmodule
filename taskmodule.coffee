@@ -19,8 +19,8 @@ taskmodule.initialize = () ->
 
 ############################################################
 #region exposedFunctions
-taskmodule.addOrderTasks = (orders) ->
-    tasksToExecute.push(order) for order in orders
+taskmodule.addTasks = (tasks) ->
+    tasksToExecute.push(task) for task in tasks
     return
 
 taskmodule.getTask = -> tasksToExecute.shift()
